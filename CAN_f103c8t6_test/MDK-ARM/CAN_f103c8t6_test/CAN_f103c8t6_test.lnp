@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"can_f103c8t6_test\startup_stm32f103xb.o"
+"can_f103c8t6_test\main.o"
+"can_f103c8t6_test\gpio.o"
+"can_f103c8t6_test\can.o"
+"can_f103c8t6_test\stm32f1xx_it.o"
+"can_f103c8t6_test\stm32f1xx_hal_msp.o"
+"can_f103c8t6_test\stm32f1xx_hal_gpio_ex.o"
+"can_f103c8t6_test\stm32f1xx_hal_can.o"
+"can_f103c8t6_test\stm32f1xx_hal.o"
+"can_f103c8t6_test\stm32f1xx_hal_rcc.o"
+"can_f103c8t6_test\stm32f1xx_hal_rcc_ex.o"
+"can_f103c8t6_test\stm32f1xx_hal_gpio.o"
+"can_f103c8t6_test\stm32f1xx_hal_dma.o"
+"can_f103c8t6_test\stm32f1xx_hal_cortex.o"
+"can_f103c8t6_test\stm32f1xx_hal_pwr.o"
+"can_f103c8t6_test\stm32f1xx_hal_flash.o"
+"can_f103c8t6_test\stm32f1xx_hal_flash_ex.o"
+"can_f103c8t6_test\stm32f1xx_hal_exti.o"
+"can_f103c8t6_test\stm32f1xx_hal_tim.o"
+"can_f103c8t6_test\stm32f1xx_hal_tim_ex.o"
+"can_f103c8t6_test\system_stm32f1xx.o"
+--strict --scatter "CAN_f103c8t6_test\CAN_f103c8t6_test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CAN_f103c8t6_test.map" -o CAN_f103c8t6_test\CAN_f103c8t6_test.axf

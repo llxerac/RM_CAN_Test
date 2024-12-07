@@ -56,6 +56,8 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+
+
 /* USER CODE END 0 */
 
 /**
@@ -64,7 +66,13 @@ void SystemClock_Config(void);
   */
 int main(void)
 {
+
   /* USER CODE BEGIN 1 */
+	
+	
+	
+
+	
 
   /* USER CODE END 1 */
 
@@ -93,8 +101,15 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  
+  HAL_Delay(1500);
+  
   while (1)
   {
+	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_SET);
+	HAL_Delay(1500);
+	HAL_GPIO_WritePin(GPIOC, GPIO_PIN_13, GPIO_PIN_RESET);
+	HAL_Delay(1500);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
